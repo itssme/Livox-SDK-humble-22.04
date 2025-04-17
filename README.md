@@ -41,11 +41,11 @@ sudo apt install cmake
 
 In the Livox SDK directory, run the following commands to compile the project:
 ```
-git clone https://github.com/Livox-SDK/Livox-SDK.git
-cd Livox-SDK
+git clone https://github.com/itssme/Livox-SDK-humble-22.04
+cd src/Livox-SDK-humble-22.04
 cd build && cmake ..
-make
-sudo make install
+make livox_sdk_shared livox_sdk_static
+sudo cmake --install . --component sdk
 ```
 
 ### 4.1.2 Windows 7/10
